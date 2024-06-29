@@ -1,0 +1,11 @@
+mov=0;
+if(keyboard_check(ord("W"))){
+	mov=-spd;	
+}
+if(keyboard_check(ord("S"))){
+	mov=spd;	
+}
+if(place_meeting(x,y+mov,Owall)){
+	mov=0;	
+}
+y+=mov;
